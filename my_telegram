@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيقي الأول</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #17212b; /* لون خلفية تليجرام المظلم */
+            color: white;
+            padding-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2481cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>أهلاً بك في تطبيقي المصغر الأول! 👋</h1>
+    <p>هذه الصفحة تعمل الآن داخل تليجرام مباشرة.</p>
+    
+    <button onclick="Telegram.WebApp.close()">إغلاق التطبيق</button>
+
+    <script>
+        // إعلام تليجرام بأن التطبيق جاهز للعرض
+        Telegram.WebApp.ready();
+    </script>
+</body>
+</html>
